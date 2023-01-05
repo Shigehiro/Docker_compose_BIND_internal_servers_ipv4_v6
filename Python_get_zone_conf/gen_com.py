@@ -34,6 +34,6 @@ zone "{zone_prefix}{i}.{zone_suffix}" in {{
         f.write(name_conf_string)
 
 print("run the following")
-print("cat com.db.orig com.zone.file.txt > ../bind_config/com/records/com.db")
-print("cat example.com.named.conf.orig example.com_named.conf.txt > ../bind_config/example.com/config/named.conf")
-print("docker compose restart")
+print("$ cat com.db.orig com.zone.file.txt > ../bind_config/com/records/com.db")
+print("$ cat example.com.named.conf.orig example.com_named.conf.txt > ../bind_config/example.com/config/named.conf")
+print("$ docker compose restart")
