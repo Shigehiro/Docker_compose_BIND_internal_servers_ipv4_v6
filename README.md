@@ -12,8 +12,8 @@
 # 2. Description
 
 - This compose file launchs two internal root DNS, two .com, four example[N].com BIND containers.
-- As for example[N].com zones, you can generate multiple example zones(example0.com, example1.com ..) with a python scrip located at Python_get_zone_conf directory.
-- This compose launchs dig client container and BIND Cache coninter as well for the testing
+- As for example[N].com zones, you can generate multiple example zones(example0.com, example1.com ..) files with a python script located at Python_get_zone_conf directory.
+- This compose launchs a `dig client` container and a `BIND Cache` container as well for the testing
 
 # 3. How to use
 
