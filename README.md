@@ -8,6 +8,8 @@
   - [3.3. Prepare zone files](#33-prepare-zone-files)
   - [3.4. Launch containers](#34-launch-containers)
   - [3.5. Confirm](#35-confirm)
+- [4. Small tips](#4-small-tips)
+  - [4.1. How to change containers IP, IP addresses in zone files](#41-how-to-change-containers-ip-ip-addresses-in-zone-files)
 
 # 2. Description
 
@@ -231,3 +233,42 @@ $ docker exec dig-client dig @2001:12a:1::10 a.example1111.com aaaa +short -6
 1111:1111:1111:1111::1111
 ```
 
+# 4. Small tips
+
+## 4.1. How to change containers IP, IP addresses in zone files
+
+By default, docker containers will use the following IPs.
+```text
+$ grep ^networks docker-compose.yml -A10
+networks:
+  bind_internal_dns:
+    driver: bridge
+    enable_ipv6: true
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/24
+          gateway: 172.20.0.1
+        - subnet: 2001:12a:1::/64
+          gateway: 2001:12a:1::1
+```
+
+If you would like to change the IPv4 address range from 172.20.0.0/24 to 172.20.30.0/24,
+edit the file as below.
+```text
+$ grep 172.20 -r ./* | awk -F':' '{print $1}' | sort -u |grep -v README
+./bind_config/cache/records/named.ca
+./bind_config/com/records/com.db
+./bind_config/com/records/named.ca
+./bind_config/example.com/records/example.com.template.db
+./bind_config/example.com/records/named.ca
+./bind_config/root/records/root.db
+./Docker_build/cacheserve_build/cs.conf
+./docker-compose.yml
+./Python_get_zone_conf/com.db.orig
+./Python_get_zone_conf/gen_com.py
+```
+
+```text
+$ grep 172.20 -r ./* | awk -F':' '{print $1}' | sort -u |grep -v README | xargs -I{} sed s/172.20.0/172.20.30/g -i {}
+```
