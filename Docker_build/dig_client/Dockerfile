@@ -1,4 +1,4 @@
-FROM ubuntu:jammy
+FROM docker.io/ubuntu:jammy
 WORKDIR /root
 RUN apt-get update && apt-get install -y iproute2 bind9-dnsutils nftables && rm -f /etc/nftables.conf
 

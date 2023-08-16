@@ -1,4 +1,4 @@
-FROM almalinux/8-init:latest
+FROM docker.io/almalinux/8-init:latest
 ADD cacheserve-7.6.3.1-308152-rhel-8-x86_64.tar.gz /tmp/
 COPY channel.conf /etc/
 WORKDIR /tmp
