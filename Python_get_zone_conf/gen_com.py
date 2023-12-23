@@ -2,7 +2,7 @@
 
 zone_prefix = 'example'
 zone_suffix = 'com'
-number_of_zone = 100000
+number_of_zone = 1000
 
 with open('com.zone.file.txt', 'w') as f:
     for i in range(0,number_of_zone-1):

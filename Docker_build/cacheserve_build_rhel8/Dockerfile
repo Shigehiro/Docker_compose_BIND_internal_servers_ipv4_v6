@@ -7,9 +7,6 @@ RUN rpm -ivh cacheserve-*/*.rpm \
 && dnf install -y bind-utils rsyslog less man bash-completion net-tools net-snmp net-snmp-utils iproute iputils python3 \
 && echo "MANDATORY_MANPATH  /usr/local/nom/man" | tee -a /etc/man_db.conf \
 dnf clean all && rm -rf /tmp/cacheserve* && systemctl enable snmpd.service && systemctl enable snmptrapd.service
-ADD nomcc /tmp/nomcc
-WORKDIR /tmp/nomcc
-RUN python3 setup.py install
 COPY cacheserve.license /usr/local/nom/etc
 COPY rsyslog.conf /etc
 COPY snmpd.conf /etc/snmp

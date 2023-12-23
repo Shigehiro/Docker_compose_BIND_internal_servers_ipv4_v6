@@ -1,38 +1,46 @@
 version: '3'
 services:
-  dig-client:
-    container_name: dig-client
+  cacheserve:
+    container_name: cacheserve
     build:
-      context: ./Docker_build/dig_client
+      context: ./Docker_build/cacheserve_build_rhel8
       dockerfile: Dockerfile
     tty: true
+    shm_size: '1gb'
     cap_add:
       - NET_ADMIN
-    networks:
-      bind_internal_dns:
-        ipv4_address: 172.20.0.5
-        ipv6_address: 2001:12a:1::5
-  bind-cache:
-    container_name: bind-cache
-    image: ubuntu/bind9:latest
-    #build:
-    #  context: ./Docker_build/bind_build_22.04
-    #  dockerfile: Dockerfile
-    #cap_add:
-    #  - NET_ADMIN
-    tty: true
+      - NET_RAW
     volumes:
-      - ./bind_config/cache/config/named.conf:/etc/bind/named.conf:rw
-      - ./bind_config/cache/records/:/var/lib/bind:rw 
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro 
+    tmpfs:
+      - /run
     networks:
       bind_internal_dns:
-        ipv4_address: 172.20.0.10
-        ipv6_address: 2001:12a:1::10
-    #ports:
-    #  - '127.0.0.1:5355:53/tcp'
-    #  - '127.0.0.1:5355:53/udp'
-    #  - '[::1]:5355:53/tcp'
-    #  - '[::1]:5355:53/udp'
+        ipv4_address: 172.20.0.100
+        ipv6_address: 2001:12a:1::100
+#  dig-client:
+#    container_name: dig-client
+#    build:
+#      context: ./Docker_build/dig_client
+#      dockerfile: Dockerfile
+#    tty: true
+#    cap_add:
+#      - NET_ADMIN
+#    networks:
+#      bind_internal_dns:
+#        ipv4_address: 172.20.0.5
+#        ipv6_address: 2001:12a:1::5
+#  bind-cache:
+#    container_name: bind-cache
+#    image: ubuntu/bind9:latest
+#    tty: true
+#    volumes:
+#      - ./bind_config/cache/config/named.conf:/etc/bind/named.conf:rw
+#      - ./bind_config/cache/records/:/var/lib/bind:rw 
+#    networks:
+#      bind_internal_dns:
+#        ipv4_address: 172.20.0.10
+#        ipv6_address: 2001:12a:1::10
   bind-root01:
     container_name: bind-root01
     image: ubuntu/bind9:latest
