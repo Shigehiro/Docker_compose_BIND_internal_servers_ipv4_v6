@@ -1,0 +1,73 @@
+services:
+  bind-root01:
+    container_name: bind-root01
+    image: docker.io/ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex02/root/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex02/root/records/:/var/lib/bind:rw 
+    ports:
+    - "192.168.103.40:53:53/udp"
+    - "192.168.103.40:53:53/tcp"
+  bind-root02:
+    container_name: bind-root02
+    image: docker.io/ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex02/root/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex02/root/records/:/var/lib/bind:rw 
+    ports:
+    - "192.168.103.41:53:53/udp"
+    - "192.168.103.41:53:53/tcp"
+  bind-com01:
+    container_name: bind-com01
+    image: docker.io/ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex02/com/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex02/com/records/:/var/lib/bind:rw 
+    ports:
+    - "192.168.103.42:53:53/udp"
+    - "192.168.103.42:53:53/tcp"
+  bind-com02:
+    container_name: bind-com02
+    image: docker.io/ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex02/com/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex02/com/records/:/var/lib/bind:rw 
+    ports:
+    - "192.168.103.43:53:53/udp"
+    - "192.168.103.43:53:53/tcp"
+  bind-example01:
+    container_name: bind-example01
+    image: docker.io/ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex02/example.com/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex02/example.com/records/:/var/lib/bind:rw 
+    ports:
+    - "192.168.103.44:53:53/udp"
+    - "192.168.103.44:53:53/tcp"
+  bind-example02:
+    container_name: bind-example02
+    image: docker.io/ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex02/example.com/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex02/example.com/records/:/var/lib/bind:rw 
+    ports:
+    - "192.168.103.45:53:53/udp"
+    - "192.168.103.45:53:53/tcp"
+  bind-example03:
+    container_name: bind-example03
+    image: docker.io/ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex02/example.com/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex02/example.com/records/:/var/lib/bind:rw 
+    ports:
+    - "192.168.103.46:53:53/udp"
+    - "192.168.103.46:53:53/tcp"
+  bind-example04:
+    container_name: bind-example04
+    image: docker.io/ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex02/example.com/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex02/example.com/records/:/var/lib/bind:rw 
+    ports:
+    - "192.168.103.47:53:53/udp"
+    - "192.168.103.47:53:53/tcp"
