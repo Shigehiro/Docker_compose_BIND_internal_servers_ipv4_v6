@@ -23,7 +23,7 @@ ns04.{zone_prefix}{i}.{zone_suffix}. IN AAAA 2001:12a:1::53
         f.write(name_conf_string)
 
 with open('example.com_named.conf.txt', 'w') as f:
-    for i in range(0,number_of_zone-1):
+    for i in range(0,number_of_zone):
         name_conf_string = f"""
 zone "{zone_prefix}{i}.{zone_suffix}" in {{
   type master;
