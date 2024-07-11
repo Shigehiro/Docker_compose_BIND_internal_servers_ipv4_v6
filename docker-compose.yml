@@ -1,23 +1,4 @@
-version: '3'
 services:
-  cacheserve:
-    container_name: cacheserve
-    build:
-      context: ./Docker_build/cacheserve_build_rhel8
-      dockerfile: Dockerfile
-    tty: true
-    shm_size: '1gb'
-    cap_add:
-      - NET_ADMIN
-      - NET_RAW
-    volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro 
-    tmpfs:
-      - /run
-    networks:
-      bind_internal_dns:
-        ipv4_address: 172.20.0.100
-        ipv6_address: 2001:12a:1::100
 #  dig-client:
 #    container_name: dig-client
 #    build:

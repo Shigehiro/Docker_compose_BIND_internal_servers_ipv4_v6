@@ -263,7 +263,6 @@ $ grep 172.20 -r ./* | awk -F':' '{print $1}' | sort -u |grep -v README
 ./bind_config/example.com/records/example.com.template.db
 ./bind_config/example.com/records/named.ca
 ./bind_config/root/records/root.db
-./Docker_build/cacheserve_build/cs.conf
 ./docker-compose.yml
 ./Python_get_zone_conf/com.db.orig
 ./Python_get_zone_conf/gen_com.py
