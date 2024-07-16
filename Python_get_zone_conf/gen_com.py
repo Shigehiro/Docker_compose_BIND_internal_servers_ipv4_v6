@@ -5,7 +5,7 @@ zone_suffix = 'com'
 number_of_zone = 1000
 
 with open('com.zone.file.txt', 'w') as f:
-    for i in range(0,number_of_zone-1):
+    for i in range(0,number_of_zone):
         name_conf_string = f"""
 {zone_prefix}{i}.{zone_suffix}. IN NS ns01.{zone_prefix}{i}.{zone_suffix}.
 {zone_prefix}{i}.{zone_suffix}. IN NS ns02.{zone_prefix}{i}.{zone_suffix}.
