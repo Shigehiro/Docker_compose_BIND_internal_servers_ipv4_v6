@@ -14,7 +14,7 @@
 # 2. Description
 
 - This compose file launchs two internal root DNS, two .com, four example[N].com BIND containers.
-- As for example[N].com zones, you can generate multiple example zones(example0.com, example1.com ..) files with a python script located at Python_get_zone_conf directory.
+- As for example[N].com zones, you can generate multiple example zones(example0.com, example1.com ..) files with a python script located at Python_gen_zone_conf directory.
 - This compose launchs a `dig client` container and a `BIND Cache` container as well for the testing
 
 # 3. How to use
@@ -78,7 +78,7 @@ networks:
 ## 3.3. Prepare zone files
 
 ```text
-$ cd Python_get_zone_conf
+$ cd Python_gen_zone_conf
 ```
 
 specify number of zones you would like to generate.
@@ -264,8 +264,8 @@ $ grep 172.20 -r ./* | awk -F':' '{print $1}' | sort -u |grep -v README
 ./bind_config/example.com/records/named.ca
 ./bind_config/root/records/root.db
 ./docker-compose.yml
-./Python_get_zone_conf/com.db.orig
-./Python_get_zone_conf/gen_com.py
+./Python_gen_zone_conf/com.db.orig
+./Python_gen_zone_conf/gen_com.py
 ```
 
 ```text
