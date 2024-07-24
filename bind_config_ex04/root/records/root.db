@@ -1,0 +1,55 @@
+$ORIGIN .
+$TTL 3600
+. IN SOA a.root-servers.net. hostmaster.root-servers.net. (
+2010062304 ; serial
+5m ; refresh
+1m ; retry
+7d ; expire
+1h ) ; negative cache
+  IN NS a.root-servers.net.
+  IN NS b.root-servers.net.
+  IN NS c.root-servers.net.
+  IN NS d.root-servers.net.
+  IN NS e.root-servers.net.
+  IN NS f.root-servers.net.
+  IN NS g.root-servers.net.
+  IN NS h.root-servers.net.
+  IN NS i.root-servers.net.
+  IN NS j.root-servers.net.
+  IN NS k.root-servers.net.
+  IN NS l.root-servers.net.
+  IN NS m.root-servers.net.
+
+a.root-servers.net. IN A 172.20.0.20
+a.root-servers.net. IN AAAA 2001:12a:1::20
+b.root-servers.net. IN A 172.20.0.21
+b.root-servers.net. IN AAAA 2001:12a:1::21
+c.root-servers.net. IN A 172.20.0.22
+c.root-servers.net. IN AAAA 2001:12a:1::22
+d.root-servers.net. IN A 172.20.0.23
+d.root-servers.net. IN AAAA 2001:12a:1::23
+e.root-servers.net. IN A 172.20.0.24
+e.root-servers.net. IN AAAA 2001:12a:1::24
+f.root-servers.net. IN A 172.20.0.25
+f.root-servers.net. IN AAAA 2001:12a:1::25
+g.root-servers.net. IN A 172.20.0.26
+g.root-servers.net. IN AAAA 2001:12a:1::26
+h.root-servers.net. IN A 172.20.0.27
+h.root-servers.net. IN AAAA 2001:12a:1::27
+i.root-servers.net. IN A 172.20.0.28
+i.root-servers.net. IN AAAA 2001:12a:1::28
+j.root-servers.net. IN A 172.20.0.29
+j.root-servers.net. IN AAAA 2001:12a:1::29
+k.root-servers.net. IN A 172.20.0.30
+k.root-servers.net. IN AAAA 2001:12a:1::30
+l.root-servers.net. IN A 172.20.0.31
+l.root-servers.net. IN AAAA 2001:12a:1::31
+m.root-servers.net. IN A 172.20.0.32
+m.root-servers.net. IN AAAA 2001:12a:1::32
+
+com. IN NS ns01.com.
+com. IN NS ns02.com.
+ns01.com. IN A 172.20.0.40
+ns01.com. IN AAAA 2001:12a:1::40
+ns02.com. IN A 172.20.0.41
+ns02.com. IN AAAA 2001:12a:1::41

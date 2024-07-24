@@ -1,0 +1,40 @@
+.                        3600000  IN  NS    A.ROOT-SERVERS.NET.
+.                        3600000  IN  NS    B.ROOT-SERVERS.NET.
+.                        3600000  IN  NS    C.ROOT-SERVERS.NET.
+.                        3600000  IN  NS    D.ROOT-SERVERS.NET.
+.                        3600000  IN  NS    E.ROOT-SERVERS.NET.
+.                        3600000  IN  NS    F.ROOT-SERVERS.NET.
+.                        3600000  IN  NS    G.ROOT-SERVERS.NET.
+.                        3600000  IN  NS    H.ROOT-SERVERS.NET.
+.                        3600000  IN  NS    I.ROOT-SERVERS.NET.
+.                        3600000  IN  NS    J.ROOT-SERVERS.NET.
+.                        3600000  IN  NS    K.ROOT-SERVERS.NET.
+.                        3600000  IN  NS    L.ROOT-SERVERS.NET.
+.                        3600000  IN  NS    M.ROOT-SERVERS.NET.
+A.ROOT-SERVERS.NET.      3600000      A     172.20.0.20
+B.ROOT-SERVERS.NET.      3600000      A     172.20.0.21
+C.ROOT-SERVERS.NET.      3600000      A     172.20.0.22
+D.ROOT-SERVERS.NET.      3600000      A     172.20.0.23
+E.ROOT-SERVERS.NET.      3600000      A     172.20.0.24
+F.ROOT-SERVERS.NET.      3600000      A     172.20.0.25
+G.ROOT-SERVERS.NET.      3600000      A     172.20.0.26
+H.ROOT-SERVERS.NET.      3600000      A     172.20.0.27
+I.ROOT-SERVERS.NET.      3600000      A     172.20.0.28
+J.ROOT-SERVERS.NET.      3600000      A     172.20.0.29
+K.ROOT-SERVERS.NET.      3600000      A     172.20.0.30
+L.ROOT-SERVERS.NET.      3600000      A     172.20.0.31
+M.ROOT-SERVERS.NET.      3600000      A     172.20.0.32
+
+A.ROOT-SERVERS.NET.      3600000      AAAA     2001:12a:1::20
+B.ROOT-SERVERS.NET.      3600000      AAAA     2001:12a:1::21
+C.ROOT-SERVERS.NET.      3600000      AAAA     2001:12a:1::22
+D.ROOT-SERVERS.NET.      3600000      AAAA     2001:12a:1::23
+F.ROOT-SERVERS.NET.      3600000      AAAA     2001:12a:1::24
+F.ROOT-SERVERS.NET.      3600000      AAAA     2001:12a:1::25
+G.ROOT-SERVERS.NET.      3600000      AAAA     2001:12a:1::26
+H.ROOT-SERVERS.NET.      3600000      AAAA     2001:12a:1::27
+I.ROOT-SERVERS.NET.      3600000      AAAA     2001:12a:1::28
+J.ROOT-SERVERS.NET.      3600000      AAAA     2001:12a:1::29
+K.ROOT-SERVERS.NET.      3600000      AAAA     2001:12a:1::30
+L.ROOT-SERVERS.NET.      3600000      AAAA     2001:12a:1::31
+M.ROOT-SERVERS.NET.      3600000      AAAA     2001:12a:1::32

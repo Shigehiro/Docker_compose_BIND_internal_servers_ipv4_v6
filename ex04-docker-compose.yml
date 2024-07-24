@@ -1,0 +1,202 @@
+services:
+  bind-root01:
+    container_name: bind-root01
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/root/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/root/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.20
+        ipv6_address: 2001:12a:1::20
+  bind-root02:
+    container_name: bind-root02
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/root/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/root/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.21
+        ipv6_address: 2001:12a:1::21
+  bind-root03:
+    container_name: bind-root03
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/root/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/root/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.22
+        ipv6_address: 2001:12a:1::22
+  bind-root04:
+    container_name: bind-root04
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/root/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/root/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.23
+        ipv6_address: 2001:12a:1::23
+  bind-root05:
+    container_name: bind-root05
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/root/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/root/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.24
+        ipv6_address: 2001:12a:1::24
+  bind-root06:
+    container_name: bind-root06
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/root/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/root/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.25
+        ipv6_address: 2001:12a:1::25
+  bind-root07:
+    container_name: bind-root07
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/root/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/root/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.26
+        ipv6_address: 2001:12a:1::26
+  bind-root08:
+    container_name: bind-root08
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/root/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/root/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.27
+        ipv6_address: 2001:12a:1::27
+  bind-root09:
+    container_name: bind-root09
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/root/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/root/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.28
+        ipv6_address: 2001:12a:1::28
+  bind-root10:
+    container_name: bind-root10
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/root/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/root/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.29
+        ipv6_address: 2001:12a:1::29
+  bind-root11:
+    container_name: bind-root11
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/root/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/root/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.30
+        ipv6_address: 2001:12a:1::30
+  bind-root12:
+    container_name: bind-root12
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/root/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/root/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.31
+        ipv6_address: 2001:12a:1::31
+  bind-root13:
+    container_name: bind-root13
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/root/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/root/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.32
+        ipv6_address: 2001:12a:1::32
+  bind-com01:
+    container_name: bind-com01
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/com/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/com/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.40
+        ipv6_address: 2001:12a:1::40
+  bind-com02:
+    container_name: bind-com02
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/com/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/com/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.41
+        ipv6_address: 2001:12a:1::41
+  bind-example01:
+    container_name: bind-example01
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/example.com/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/example.com/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.50
+        ipv6_address: 2001:12a:1::50
+  bind-example02:
+    container_name: bind-example02
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/example.com/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/example.com/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.51
+        ipv6_address: 2001:12a:1::51
+  bind-example03:
+    container_name: bind-example03
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/example.com/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/example.com/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.52
+        ipv6_address: 2001:12a:1::52
+  bind-example04:
+    container_name: bind-example04
+    image: ubuntu/bind9:latest
+    volumes:
+      - ./bind_config_ex04/example.com/config/named.conf:/etc/bind/named.conf:rw
+      - ./bind_config_ex04/example.com/records/:/var/lib/bind:rw 
+    networks:
+      bind_internal_dns:
+        ipv4_address: 172.20.0.53
+        ipv6_address: 2001:12a:1::53
+networks:
+  bind_internal_dns:
+    driver: bridge
+    enable_ipv6: true
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/24
+          gateway: 172.20.0.1
+        - subnet: 2001:12a:1::/64
+          gateway: 2001:12a:1::1
