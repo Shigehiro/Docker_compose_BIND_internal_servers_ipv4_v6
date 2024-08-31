@@ -1,7 +1,7 @@
 FROM docker.io/ubuntu:24.04
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update && apt-get install -y tcpdump python3-scapy iproute2 nftables --no-install-recommends
+RUN apt-get update && apt-get install -y libpcap-dev python3-scapy iproute2 nftables --no-install-recommends
 
 ADD ./nftables.conf /etc/nftables.conf
 ADD ./entrypoint.sh /usr/sbin/entrypoint.sh
