@@ -1,0 +1,145 @@
+
+$TTL 3600
+@ IN SOA ns01 ns01 (
+2010062303
+1h
+15m
+30d
+1h )
+  IN NS ns01.com.
+  IN NS ns02.com.
+
+ns01 IN A 192.168.111.22
+ns01 IN AAAA 2001:db8:1::42
+ns02 IN A 192.168.111.23
+ns02 IN AAAA 2001:db8:1::43
+
+example000000.com. IN NS ns01.example000000.com.
+example000000.com. IN NS ns02.example000000.com.
+example000000.com. IN NS ns03.example000000.com.
+example000000.com. IN NS ns04.example000000.com.
+ns01.example000000.com. IN A 192.168.111.24
+ns01.example000000.com. IN AAAA 2001:db8:1::44
+ns02.example000000.com. IN A 192.168.111.25
+ns02.example000000.com. IN AAAA 2001:db8:1::45
+ns03.example000000.com. IN A 192.168.111.26
+ns03.example000000.com. IN AAAA 2001:db8:1::46
+ns04.example000000.com. IN A 192.168.111.27
+ns04.example000000.com. IN AAAA 2001:db8:1::47
+
+example000001.com. IN NS ns01.example000001.com.
+example000001.com. IN NS ns02.example000001.com.
+example000001.com. IN NS ns03.example000001.com.
+example000001.com. IN NS ns04.example000001.com.
+ns01.example000001.com. IN A 192.168.111.24
+ns01.example000001.com. IN AAAA 2001:db8:1::44
+ns02.example000001.com. IN A 192.168.111.25
+ns02.example000001.com. IN AAAA 2001:db8:1::45
+ns03.example000001.com. IN A 192.168.111.26
+ns03.example000001.com. IN AAAA 2001:db8:1::46
+ns04.example000001.com. IN A 192.168.111.27
+ns04.example000001.com. IN AAAA 2001:db8:1::47
+
+example000002.com. IN NS ns01.example000002.com.
+example000002.com. IN NS ns02.example000002.com.
+example000002.com. IN NS ns03.example000002.com.
+example000002.com. IN NS ns04.example000002.com.
+ns01.example000002.com. IN A 192.168.111.24
+ns01.example000002.com. IN AAAA 2001:db8:1::44
+ns02.example000002.com. IN A 192.168.111.25
+ns02.example000002.com. IN AAAA 2001:db8:1::45
+ns03.example000002.com. IN A 192.168.111.26
+ns03.example000002.com. IN AAAA 2001:db8:1::46
+ns04.example000002.com. IN A 192.168.111.27
+ns04.example000002.com. IN AAAA 2001:db8:1::47
+
+example000003.com. IN NS ns01.example000003.com.
+example000003.com. IN NS ns02.example000003.com.
+example000003.com. IN NS ns03.example000003.com.
+example000003.com. IN NS ns04.example000003.com.
+ns01.example000003.com. IN A 192.168.111.24
+ns01.example000003.com. IN AAAA 2001:db8:1::44
+ns02.example000003.com. IN A 192.168.111.25
+ns02.example000003.com. IN AAAA 2001:db8:1::45
+ns03.example000003.com. IN A 192.168.111.26
+ns03.example000003.com. IN AAAA 2001:db8:1::46
+ns04.example000003.com. IN A 192.168.111.27
+ns04.example000003.com. IN AAAA 2001:db8:1::47
+
+example000004.com. IN NS ns01.example000004.com.
+example000004.com. IN NS ns02.example000004.com.
+example000004.com. IN NS ns03.example000004.com.
+example000004.com. IN NS ns04.example000004.com.
+ns01.example000004.com. IN A 192.168.111.24
+ns01.example000004.com. IN AAAA 2001:db8:1::44
+ns02.example000004.com. IN A 192.168.111.25
+ns02.example000004.com. IN AAAA 2001:db8:1::45
+ns03.example000004.com. IN A 192.168.111.26
+ns03.example000004.com. IN AAAA 2001:db8:1::46
+ns04.example000004.com. IN A 192.168.111.27
+ns04.example000004.com. IN AAAA 2001:db8:1::47
+
+example000005.com. IN NS ns01.example000005.com.
+example000005.com. IN NS ns02.example000005.com.
+example000005.com. IN NS ns03.example000005.com.
+example000005.com. IN NS ns04.example000005.com.
+ns01.example000005.com. IN A 192.168.111.24
+ns01.example000005.com. IN AAAA 2001:db8:1::44
+ns02.example000005.com. IN A 192.168.111.25
+ns02.example000005.com. IN AAAA 2001:db8:1::45
+ns03.example000005.com. IN A 192.168.111.26
+ns03.example000005.com. IN AAAA 2001:db8:1::46
+ns04.example000005.com. IN A 192.168.111.27
+ns04.example000005.com. IN AAAA 2001:db8:1::47
+
+example000006.com. IN NS ns01.example000006.com.
+example000006.com. IN NS ns02.example000006.com.
+example000006.com. IN NS ns03.example000006.com.
+example000006.com. IN NS ns04.example000006.com.
+ns01.example000006.com. IN A 192.168.111.24
+ns01.example000006.com. IN AAAA 2001:db8:1::44
+ns02.example000006.com. IN A 192.168.111.25
+ns02.example000006.com. IN AAAA 2001:db8:1::45
+ns03.example000006.com. IN A 192.168.111.26
+ns03.example000006.com. IN AAAA 2001:db8:1::46
+ns04.example000006.com. IN A 192.168.111.27
+ns04.example000006.com. IN AAAA 2001:db8:1::47
+
+example000007.com. IN NS ns01.example000007.com.
+example000007.com. IN NS ns02.example000007.com.
+example000007.com. IN NS ns03.example000007.com.
+example000007.com. IN NS ns04.example000007.com.
+ns01.example000007.com. IN A 192.168.111.24
+ns01.example000007.com. IN AAAA 2001:db8:1::44
+ns02.example000007.com. IN A 192.168.111.25
+ns02.example000007.com. IN AAAA 2001:db8:1::45
+ns03.example000007.com. IN A 192.168.111.26
+ns03.example000007.com. IN AAAA 2001:db8:1::46
+ns04.example000007.com. IN A 192.168.111.27
+ns04.example000007.com. IN AAAA 2001:db8:1::47
+
+example000008.com. IN NS ns01.example000008.com.
+example000008.com. IN NS ns02.example000008.com.
+example000008.com. IN NS ns03.example000008.com.
+example000008.com. IN NS ns04.example000008.com.
+ns01.example000008.com. IN A 192.168.111.24
+ns01.example000008.com. IN AAAA 2001:db8:1::44
+ns02.example000008.com. IN A 192.168.111.25
+ns02.example000008.com. IN AAAA 2001:db8:1::45
+ns03.example000008.com. IN A 192.168.111.26
+ns03.example000008.com. IN AAAA 2001:db8:1::46
+ns04.example000008.com. IN A 192.168.111.27
+ns04.example000008.com. IN AAAA 2001:db8:1::47
+
+example000009.com. IN NS ns01.example000009.com.
+example000009.com. IN NS ns02.example000009.com.
+example000009.com. IN NS ns03.example000009.com.
+example000009.com. IN NS ns04.example000009.com.
+ns01.example000009.com. IN A 192.168.111.24
+ns01.example000009.com. IN AAAA 2001:db8:1::44
+ns02.example000009.com. IN A 192.168.111.25
+ns02.example000009.com. IN AAAA 2001:db8:1::45
+ns03.example000009.com. IN A 192.168.111.26
+ns03.example000009.com. IN AAAA 2001:db8:1::46
+ns04.example000009.com. IN A 192.168.111.27
+ns04.example000009.com. IN AAAA 2001:db8:1::47

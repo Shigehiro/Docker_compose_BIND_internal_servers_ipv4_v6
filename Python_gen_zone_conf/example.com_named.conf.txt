@@ -1,0 +1,76 @@
+
+options {
+  directory "/var/cache/bind";
+  dnssec-validation false;
+  allow-query { any; };
+  recursion no;
+  allow-recursion { none; };
+  listen-on { any; };
+  listen-on-v6 { any; };
+  notify no;
+};
+
+zone  "." in {
+        type hint;
+        file "/var/lib/bind/named.ca";
+        };
+
+zone "example000000.com" in {
+  type master;
+  file "/var/lib/bind/example.com.template.db";
+};
+
+
+zone "example000001.com" in {
+  type master;
+  file "/var/lib/bind/example.com.template.db";
+};
+
+
+zone "example000002.com" in {
+  type master;
+  file "/var/lib/bind/example.com.template.db";
+};
+
+
+zone "example000003.com" in {
+  type master;
+  file "/var/lib/bind/example.com.template.db";
+};
+
+
+zone "example000004.com" in {
+  type master;
+  file "/var/lib/bind/example.com.template.db";
+};
+
+
+zone "example000005.com" in {
+  type master;
+  file "/var/lib/bind/example.com.template.db";
+};
+
+
+zone "example000006.com" in {
+  type master;
+  file "/var/lib/bind/example.com.template.db";
+};
+
+
+zone "example000007.com" in {
+  type master;
+  file "/var/lib/bind/example.com.template.db";
+};
+
+
+zone "example000008.com" in {
+  type master;
+  file "/var/lib/bind/example.com.template.db";
+};
+
+
+zone "example000009.com" in {
+  type master;
+  file "/var/lib/bind/example.com.template.db";
+};
+

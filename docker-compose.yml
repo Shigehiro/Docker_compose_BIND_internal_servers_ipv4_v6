@@ -16,8 +16,8 @@ services:
 #    image: ubuntu/bind9:latest
 #    tty: true
 #    volumes:
-#      - ./bind_config/cache/config/named.conf:/etc/bind/named.conf:rw
-#      - ./bind_config/cache/records/:/var/lib/bind:rw 
+#      - ./bind_config/cache/config/named.conf:/etc/bind/named.conf
+#      - ./bind_config/cache/records/:/var/lib/bind 
 #    networks:
 #      bind_internal_dns:
 #        ipv4_address: 172.20.0.10
@@ -26,8 +26,8 @@ services:
     container_name: bind-root01
     image: ubuntu/bind9:latest
     volumes:
-      - ./bind_config/root/config/named.conf:/etc/bind/named.conf:rw
-      - ./bind_config/root/records/:/var/lib/bind:rw 
+      - ./bind_config/root/config/named.conf:/etc/bind/named.conf
+      - ./bind_config/root/records/:/var/lib/bind 
     networks:
       bind_internal_dns:
         ipv4_address: 172.20.0.30
@@ -36,8 +36,8 @@ services:
     container_name: bind-root02
     image: ubuntu/bind9:latest
     volumes:
-      - ./bind_config/root/config/named.conf:/etc/bind/named.conf:rw
-      - ./bind_config/root/records/:/var/lib/bind:rw 
+      - ./bind_config/root/config/named.conf:/etc/bind/named.conf
+      - ./bind_config/root/records/:/var/lib/bind 
     networks:
       bind_internal_dns:
         ipv4_address: 172.20.0.31
@@ -46,8 +46,8 @@ services:
     container_name: bind-com01
     image: ubuntu/bind9:latest
     volumes:
-      - ./bind_config/com/config/named.conf:/etc/bind/named.conf:rw
-      - ./bind_config/com/records/:/var/lib/bind:rw 
+      - ./bind_config/com/config/named.conf:/etc/bind/named.conf
+      - ./bind_config/com/records/:/var/lib/bind 
     networks:
       bind_internal_dns:
         ipv4_address: 172.20.0.40
@@ -56,8 +56,8 @@ services:
     container_name: bind-com02
     image: ubuntu/bind9:latest
     volumes:
-      - ./bind_config/com/config/named.conf:/etc/bind/named.conf:rw
-      - ./bind_config/com/records/:/var/lib/bind:rw 
+      - ./bind_config/com/config/named.conf:/etc/bind/named.conf
+      - ./bind_config/com/records/:/var/lib/bind 
     networks:
       bind_internal_dns:
         ipv4_address: 172.20.0.41
@@ -66,8 +66,8 @@ services:
     container_name: bind-example01
     image: ubuntu/bind9:latest
     volumes:
-      - ./bind_config/example.com/config/named.conf:/etc/bind/named.conf:rw
-      - ./bind_config/example.com/records/:/var/lib/bind:rw 
+      - ./bind_config/example.com/config/named.conf:/etc/bind/named.conf
+      - ./bind_config/example.com/records/:/var/lib/bind 
     networks:
       bind_internal_dns:
         ipv4_address: 172.20.0.50
@@ -76,8 +76,8 @@ services:
     container_name: bind-example02
     image: ubuntu/bind9:latest
     volumes:
-      - ./bind_config/example.com/config/named.conf:/etc/bind/named.conf:rw
-      - ./bind_config/example.com/records/:/var/lib/bind:rw 
+      - ./bind_config/example.com/config/named.conf:/etc/bind/named.conf
+      - ./bind_config/example.com/records/:/var/lib/bind 
     networks:
       bind_internal_dns:
         ipv4_address: 172.20.0.51
@@ -86,8 +86,8 @@ services:
     container_name: bind-example03
     image: ubuntu/bind9:latest
     volumes:
-      - ./bind_config/example.com/config/named.conf:/etc/bind/named.conf:rw
-      - ./bind_config/example.com/records/:/var/lib/bind:rw 
+      - ./bind_config/example.com/config/named.conf:/etc/bind/named.conf
+      - ./bind_config/example.com/records/:/var/lib/bind 
     networks:
       bind_internal_dns:
         ipv4_address: 172.20.0.52
@@ -96,8 +96,8 @@ services:
     container_name: bind-example04
     image: ubuntu/bind9:latest
     volumes:
-      - ./bind_config/example.com/config/named.conf:/etc/bind/named.conf:rw
-      - ./bind_config/example.com/records/:/var/lib/bind:rw 
+      - ./bind_config/example.com/config/named.conf:/etc/bind/named.conf
+      - ./bind_config/example.com/records/:/var/lib/bind 
     networks:
       bind_internal_dns:
         ipv4_address: 172.20.0.53

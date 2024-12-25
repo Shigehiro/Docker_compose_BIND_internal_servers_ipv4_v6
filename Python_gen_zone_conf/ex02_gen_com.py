@@ -2,7 +2,7 @@
 
 zone_prefix = 'example'
 zone_suffix = 'com'
-number_of_zone = 100000
+number_of_zone = 10
 
 # Generate zone file
 with open('com.zone.file.txt', 'w') as f:
@@ -17,9 +17,9 @@ $TTL 3600
   IN NS ns01.com.
   IN NS ns02.com.
 
-ns01 IN A 192.168.55.42
+ns01 IN A 192.168.111.22
 ns01 IN AAAA 2001:db8:1::42
-ns02 IN A 192.168.55.43
+ns02 IN A 192.168.111.23
 ns02 IN AAAA 2001:db8:1::43
 """
     f.write(conf_string)
@@ -34,13 +34,13 @@ with open('com.zone.file.txt', 'a') as f:
 {zone_prefix}{domain_number}.{zone_suffix}. IN NS ns02.{zone_prefix}{domain_number}.{zone_suffix}.
 {zone_prefix}{domain_number}.{zone_suffix}. IN NS ns03.{zone_prefix}{domain_number}.{zone_suffix}.
 {zone_prefix}{domain_number}.{zone_suffix}. IN NS ns04.{zone_prefix}{domain_number}.{zone_suffix}.
-ns01.{zone_prefix}{domain_number}.{zone_suffix}. IN A 192.168.55.44
+ns01.{zone_prefix}{domain_number}.{zone_suffix}. IN A 192.168.111.24
 ns01.{zone_prefix}{domain_number}.{zone_suffix}. IN AAAA 2001:db8:1::44
-ns02.{zone_prefix}{domain_number}.{zone_suffix}. IN A 192.168.55.45
+ns02.{zone_prefix}{domain_number}.{zone_suffix}. IN A 192.168.111.25
 ns02.{zone_prefix}{domain_number}.{zone_suffix}. IN AAAA 2001:db8:1::45
-ns03.{zone_prefix}{domain_number}.{zone_suffix}. IN A 192.168.55.46
+ns03.{zone_prefix}{domain_number}.{zone_suffix}. IN A 192.168.111.26
 ns03.{zone_prefix}{domain_number}.{zone_suffix}. IN AAAA 2001:db8:1::46
-ns04.{zone_prefix}{domain_number}.{zone_suffix}. IN A 192.168.55.47
+ns04.{zone_prefix}{domain_number}.{zone_suffix}. IN A 192.168.111.27
 ns04.{zone_prefix}{domain_number}.{zone_suffix}. IN AAAA 2001:db8:1::47
 """
         f.write(name_conf_string)
